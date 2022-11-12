@@ -12,7 +12,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
     -   [Continued development](#continued-development)
-    -   [Useful resources](#useful-resources)
 -   [Author](#author)
 -   [Acknowledgments](#acknowledgments)
 
@@ -33,7 +32,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Github](https://your-solution-url.com)
+-   Solution URL: [Github](https://github.com/Jeffreyon/product-preview-card-component)
 -   Live Site URL: [Deployed with surge](https://product-card-react.surge.sh/)
 
 ## My process
