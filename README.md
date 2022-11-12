@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Frontend Mentor - Product preview card component solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+    -   [Continued development](#continued-development)
+    -   [Useful resources](#useful-resources)
+-   [Author](#author)
+-   [Acknowledgments](#acknowledgments)
 
-### `yarn start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I just started learning ReactJS and i was itching to build something on my own. I first wanted to design it myself but i figured that would divert me from focusing solely on React. Then i found Frontend Mentor and their program provided the design i needed to build this small component
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `yarn test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   View the optimal layout depending on their device's screen size
+-   See hover and focus states for interactive elements
 
-### `yarn build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![screenshot.png](./screenshot.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   Solution URL: [Github](https://your-solution-url.com)
+-   Live Site URL: [Deployed with surge](https://product-card-react.surge.sh/)
 
-### `yarn eject`
+## My process
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I started off with a React app created using create-react-app, it gave me all the tooling I needed so i could focus on building the component.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Coding wise, i wanted to have the skeleton of my markup in place and the data that powered the preview, so i created a Product Card component that accepted a `product` object to render any kind of product data passed. Once i set that up i started styling
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Styling it with custom css took the most part of my time, i found myself going through the CSS documentation on [DevDocs.io](https://devdocs.io) a lot but over time i fixed the styling quirks i had
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once i had the mobile view down, i started building the desktop view but the project had different images for each screen so i created 2 `<img />` elements and set up media queries so that only one image would show per breakpoint. I don't know if that's good performance-wise but i wanted to ship fast.
 
-## Learn More
+### Built with
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   Semantic HTML5 markup
+-   CSS custom properties
+-   Flexbox
+-   Mobile-first workflow
+-   [React](https://reactjs.org/) - JS library
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### What I learned
 
-### Code Splitting
+I got a full beginners overview to the ReactJS framework
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Continued development
 
-### Analyzing the Bundle Size
+I want to improve how i styled the component, maybe using sass or tailwind. The layout is good but it's still glued together with too much hard-coded css
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Plus there are quirks with the build process. For some reason, the build does not reference static assets with the right url so i have to manually edit the output and serve with surge
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   Website - [Jeffrey Onuigbo](https://www.github.com/Jeffreyon)
+-   Frontend Mentor - [@jeffreyon](https://www.frontendmentor.io/profile/Jeffreyon)
+-   Twitter - [@jeffreyon\_](https://www.twitter.com/jeffreyon_)
