@@ -1,29 +1,28 @@
 import { useState } from "react";
-import Navbar from "./Navbar";
-import List from "./List";
-import Counter from "./CounterClass";
-import AddItem from "./AddItem";
+import ProductCard from "./ProductCard";
+import imageMobile from "./image-product-mobile.jpg";
+import imageDesktop from "./image-product-desktop.jpg";
 
 function App() {
-    const [guitars, setGuitars] = useState([
-        { title: "Strut" },
-        { title: "Les Paul" },
-        { title: "Explorer" },
-    ]);
+    const sampleProduct = {
+        images: {
+            imageDesktop,
+            imageMobile,
+        },
+        category: "perfume",
+        name: "Gabrielle Essence Eau De Parfum",
+        description:
+            "A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL",
+        price: "$149.99",
+        formerPrice: "$169.99",
+    };
 
-    function updateGuitars(newGuitar) {
-        setGuitars([...guitars, newGuitar]);
-    }
+    const [product, setProduct] = useState(sampleProduct);
 
     return (
-        <>
-            <Navbar title="Uncontrolled Inputs" />
-            <div className="container">
-                {/* <Counter /> */}
-                <AddItem buttonText="Add Guitar" onSubmit={updateGuitars} />
-                <List title="Guitars" items={guitars} background="primary" />
-            </div>
-        </>
+        <div className="stage">
+            <ProductCard product={product} />
+        </div>
     );
 }
 
