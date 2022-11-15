@@ -1,6 +1,6 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - Intro component with sign up form solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,37 +13,43 @@ This is a solution to the [Product preview card component challenge on Frontend 
     -   [What I learned](#what-i-learned)
     -   [Continued development](#continued-development)
 -   [Author](#author)
--   [Acknowledgments](#acknowledgments)
 
 ## Overview
 
-I just started learning ReactJS and i was itching to build something on my own. I first wanted to design it myself but i figured that would divert me from focusing solely on React. Then i found Frontend Mentor and their program provided the design i needed to build this small component
+I built a signup form component that validates a user's input and shows errors if they submit an invalid form. It was built using ReactJS(create-react-app) and TailwindCSS
 
 ### The challenge
 
 Users should be able to:
 
--   View the optimal layout depending on their device's screen size
--   See hover and focus states for interactive elements
+-   View the optimal layout for the site depending on their device's screen size
+-   See hover states for all interactive elements on the page
+-   Receive an error message when the `form` is submitted if:
+    -   Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
+    -   The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_
 
 ### Screenshot
 
-![screenshot.png](./screenshot.png)
+![screenshot](./screenshot.png)
 
 ### Links
 
--   Solution URL: [Github](https://github.com/Jeffreyon/product-preview-card-component)
--   Live Site URL: [Deployed with surge](https://product-card-react.surge.sh/)
+-   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
-I started off with a React app created using create-react-app, it gave me all the tooling I needed so i could focus on building the component.
+I chose to build this project because i wanted to try something interactive rather than static components.
 
-Coding wise, i wanted to have the skeleton of my markup in place and the data that powered the preview, so i created a Product Card component that accepted a `product` object to render any kind of product data passed. Once i set that up i started styling
+Started off with unstyled React components so i could focus on how data flowed. Initially i wanted each input field to keep it's own state, but it got too complex quickly so i kept every state and functionality in the form itself and passed them as props to the input fields
 
-Styling it with custom css took the most part of my time, i found myself going through the CSS documentation on [DevDocs.io](https://devdocs.io) a lot but over time i fixed the styling quirks i had
+After testing the first input box (for first name), i turned it into a generic component where i can pass input attributes as props. I used refs to get access to the input's value but passing refs as a prop is not allowed in react, except when passed with `React.forwardRef()`. It was the first time i used that functionality
 
-Once i had the mobile view down, i started building the desktop view but the project had different images for each screen so i created 2 `<img />` elements and set up media queries so that only one image would show per breakpoint. I don't know if that's good performance-wise but i wanted to ship fast.
+Once i had the components setup and working, i got to styling it and I chose tailwindCSS for their utilities based library
+
+When the form gets submitted, it calls a function passed as a prop from the `App` parent component. That way i can do something when a valid form gets submitted (like log the user in)
+
+After that i deployed the site using surge.sh
 
 ### Built with
 
@@ -52,16 +58,20 @@ Once i had the mobile view down, i started building the desktop view but the pro
 -   Flexbox
 -   Mobile-first workflow
 -   [React](https://reactjs.org/) - JS library
+-   [TailwindCSS](https://tailwindcss.com) - CSS library
+-   [Surge](https://surge.sh) - Static site server
 
 ### What I learned
 
-I got a full beginners overview to the ReactJS framework
+-   Learnt how to use `React.forwardRef()`
+-   Learnt how to setup and use tailwind for a React project including optimizing for production
+-   Learnt how to use Tailwind's `@apply` directive so that i can use tailwind's classes in my custom styles without hardcoding those values
 
 ### Continued development
 
-I want to improve how i styled the component, maybe using sass or tailwind. The layout is good but it's still glued together with too much hard-coded css
+I would like to learn how to customize Tailwind further. While the build looks close to the proposed design, i didn't nail it.
 
-Plus there are quirks with the build process. For some reason, the build does not reference static assets with the right url so i have to manually edit the output and serve with surge
+Til when i start using sass
 
 ## Author
 
