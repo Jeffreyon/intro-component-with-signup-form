@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Github](https://github.com/Jeffreyon/intro-component-with-signup-form)
+-   Live Site URL: [Deployed on Surge](https://signup-component-react.surge.sh/)
 
 ## My process
 
@@ -45,11 +45,11 @@ Started off with unstyled React components so i could focus on how data flowed. 
 
 After testing the first input box (for first name), i turned it into a generic component where i can pass input attributes as props. I used refs to get access to the input's value but passing refs as a prop is not allowed in react, except when passed with `React.forwardRef()`. It was the first time i used that functionality
 
-Once i had the components setup and working, i got to styling it and I chose tailwindCSS for their utilities based library
+Once i had the components setup and working, i got to styling it and I chose TailwindCSS for their utilities based library. Their default design system had everything i needed. No stress.
 
 When the form gets submitted, it calls a function passed as a prop from the `App` parent component. That way i can do something when a valid form gets submitted (like log the user in)
 
-After that i deployed the site using surge.sh
+After that i deployed the site using surge.sh, here's a [link to the project](https://signup-component-react.surge.sh/)
 
 ### Built with
 
@@ -69,9 +69,7 @@ After that i deployed the site using surge.sh
 
 ### Continued development
 
-I would like to learn how to customize Tailwind further. While the build looks close to the proposed design, i didn't nail it.
-
-Til when i start using sass
+I would like to learn how to customize Tailwind further. While the build looks close to the proposed design, i didn't nail it as much as i wanted to. Until i start using sass.
 
 ## Author
 
