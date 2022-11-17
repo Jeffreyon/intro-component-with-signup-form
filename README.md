@@ -75,4 +75,4 @@ I would like to learn how to customize Tailwind further. While the build looks c
 
 -   Website - [Jeffrey Onuigbo](https://www.github.com/Jeffreyon)
 -   Frontend Mentor - [@jeffreyon](https://www.frontendmentor.io/profile/Jeffreyon)
--   Twitter - [@jeffreyon\_](https://www.twitter.com/jeffreyon_)
+-   Twitter - [@jeffreyon_](https://www.twitter.com/jeffreyon_)
